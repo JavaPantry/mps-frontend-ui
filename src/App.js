@@ -42,8 +42,15 @@ class App extends Component {
   getTodos(){
     $.ajax({
       //url: 'https://jsonplaceholder.typicode.com/todos',
-      //url: 'https://brm-eap7dev:8443/mds/data/userprofiles.json',
-      url: 'data/customers.json',
+
+      /*
+      don't forget to enable CORS requests in rest-point by adding
+      @CrossOrigin(origins = "http://localhost:3000")
+      annotation to method with:
+      @RequestMapping(value={"/api/clients"}, method = RequestMethod.GET)
+      */
+      url: 'http://localhost:8080/api/clients',
+      //Also works=> url: 'data/customers.json',
       dataType:'json',
       cache: false,
       success: function(data){

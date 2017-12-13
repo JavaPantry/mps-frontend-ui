@@ -15,7 +15,7 @@ class Todos extends Component {
       todoItems = this.props.todos.map(todo => {
         //console.log(project);
         return (
-          <TodoItem key={todo.title} todo={todo} />
+          <TodoItem key={todo.id} todo={todo} />
         );
       });
     }
@@ -24,7 +24,7 @@ class Todos extends Component {
 
         <div className="Todos">
             <h3>Customer List</h3>
-            <table className="table-striped table-condensed table table-bordered table-hover" > {/*style={this.tabStyle}*/}
+            <table className="table-striped table-condensed table table-bordered table-hover" >
                 <tbody>
                 {todoItems}
                 </tbody>

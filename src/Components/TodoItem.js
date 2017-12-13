@@ -15,7 +15,7 @@ class TodoItem extends Component {
 
   render() {
     return (
-      <tr >  {/*className="Todo"*/}
+      <tr >{/*className="Todo"*/}
         <td style={this.tabStyle}>{this.props.todo.id}</td>
         <td style={this.tabStyle}>{this.props.todo.customerName}</td>
         <td style={this.tabStyle}>{this.props.todo.companyCode}</td>
