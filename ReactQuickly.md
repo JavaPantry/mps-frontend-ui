@@ -1,8 +1,10 @@
 The source code is available on the Manning website (www.manning.com/books/
 react-quickly) and on GitHub (https://github.com/azat-co/react-quickly).
-
 $ git clone https://github.com/azat-co/react-quickly.git
- 
+
+[Evernote MPS UI redesign](https://www.evernote.com/shard/s231/nl/30014402/f4bcb9d6-ebec-426b-9dbe-b3c0f8df0760)
+
+
 ####2.3 Working with properties (page 34)
 
 
@@ -42,4 +44,27 @@ Webpack knows how to deal with all three types of JavaScript module:
 
 ## Redux
 
-[Redux doc](https://rajdee.gitbooks.io/redux-in-russian/content/docs/basics/Actions.html) Russian translattion 
+[Redux doc](https://rajdee.gitbooks.io/redux-in-russian/content/docs/basics/Actions.html) Russian translattion
+
+
+#### JavaScript destructuring assignment syntax
+
+The **_destructuring assignment_** syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+**_Object destructuring_** - Basic assignment
+```$xslt
+var o = {p: 42, q: true};
+var {p, q} = o;
+console.log(p); // 42
+console.log(q); // true
+```
+
+From book
+```
+const ReactRouter = require('react-router')
+let { Router,
+  Route,
+  Link
+} = ReactRouter
+```
+ 
